@@ -128,7 +128,32 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+//Code Here 
+
+function divider(numbersArray){
+  var even = [];
+  var odd = [];
+  var answer = [even,odd]
+  
+    // numbersArray.map(number => {
+    //   number % 2 == 0 ? even.push(number) : odd.push(number)
+    // })
+
+  for(i = 0; i < numbersArray.length; i++) {
+    if(numbersArray[i] % 2 === 0) {
+      even.push(numbersArray[i]) } 
+      else {
+        odd.push(numbersArray[i])
+      }
+  }
+
+  return answer
+      
+}
+    
+
+
+
 
 
 
@@ -151,6 +176,19 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+
+function finder(arr){
+  var randomNumber = getRandomArbitrary()
+
+  for(i = 0; i < arr.length;){
+    if(arr[i] === randomNumber){
+      true
+    } else {
+      false
+    }
+  } 
+  finder()
+}
 
 
 
@@ -183,6 +221,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 
 
+
 ////////// PROBLEM 9 //////////
 
 /*
@@ -191,7 +230,11 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-
+function maker(arr){
+for(i = 1; i <= 215; i++){
+ return arr.push(i);
+}
+}
 
 ////////// PROBLEM 10 //////////
 
@@ -227,6 +270,7 @@ for(var i = 0; i < num2; i++){
 /*
   Above is some code that adds a random number of values to both arr1 and arr2.
   Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. 
+  
   Return the longer of the two arrays.
 */
 
